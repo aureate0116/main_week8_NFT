@@ -1,20 +1,27 @@
 //google fonts & icon
-// @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-// 中文 'Noto Sans TC',英文 'Squada One'
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap');
+//中文 'Noto Sans TC',英文 'Squada One'
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap');
 
 @import "../../../node_modules/bootstrap/scss/functions";
 
 // 修改 bootstrap 自定義變數
-@import "./helpers/variables";
 // @import "./helpers/variables_2";
+@import "./helpers/variables";
+@import "./helpers/utilities";
+
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // custom 順序: mixin > reset > base > layout > components(module) > pages (使用bootstrap 不用 reset)
+@import './helpers/mixin';
+@import './helpers/base';
 
-// @import './helpers/mixin';
-// @import './helpers/base';
+@import './layout/layout';
 
-@import './layout/layout.scss';
-@import './pages/index.scss';
+
+@import './components/buttons';
+
+
+@import './pages/index';
