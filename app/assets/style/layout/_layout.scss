@@ -1,0 +1,36 @@
+.navbar-brand{
+    width: 85px;
+    height: 18px;
+    display: block;
+    background-image: url('../../assets/images/logo.svg');
+    background-size: cover;
+    
+    @include desktop(){
+        width: 190px;
+        height: 40px;
+    }
+}
+
+header{
+    border-bottom: 1px solid #000;
+}
+
+// .navbar .material-icons{
+//    width: 21px;
+//    height: 18px;
+// }
+
+.search{
+    // border-left:1px solid;
+    // border-right:1px solid;
+    .form-control{
+        width: 288px;
+        height: 24px;
+        border:none;
+        display: none;
+        @include desktop(){
+            display: block;
+        }
+    }
+}
+

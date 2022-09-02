@@ -1,18 +1,22 @@
 /*放全站html標籤css設定*/
 
-// *,
-// *::before,
-// *::after {
-//   box-sizing: border-box;
-// }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-// // body{ 
-// //   color:#fff;
-// //   font-weight: 100;
-// // }
+body{ 
+    background-color: #F0F0F0;
+    font-family:'Noto Sans TC' ;
+}
 
-// img{
-//   max-width: 100%;
-//   height: auto;
-//   vertical-align: middle; 
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; 
+}
+
+// ul {
+//   margin-bottom: 0;
 // }

@@ -1,16 +1,32 @@
-
-
 .btn-triangle{
     position: relative;
+
+    &::after{
+        content:"";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-left: 16px transparent solid;
+        border-bottom: 16px $primary solid;
+    }
 }
-.btn-triangle::after{
-    content:"";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    border-left: 16px transparent solid;
-    border-bottom: 16px $primary solid;
+.btn-triangle:hover::after{
+    border-bottom: 16px black solid;
 }
-.btn-triangle :hover{
-    border-bottom: 16px $black solid;
+
+
+.btn-white{
+    background-color: #fff;
+    //border: 1px solid black;
+
+    &:hover{
+        background-color:  $primary ;
+        color:#fff;
+    }
+}
+
+.btn-border:hover{
+    border: 1px solid black;
+    background-color:  $primary ;
+    color:#fff;
 }
