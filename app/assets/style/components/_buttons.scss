@@ -3,7 +3,7 @@
 .btn-triangle{
     position: relative;
 }
-.btn-triangle ::after{
+.btn-triangle::after{
     content:"";
     position: absolute;
     right: 0;
