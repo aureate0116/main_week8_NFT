@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap");
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -76,7 +76,7 @@ hr:not([size]) {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -125,7 +125,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -5254,7 +5254,7 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #000;
 }
 
 .card > hr {
@@ -5312,13 +5312,13 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 1px solid #000;
 }
 
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: 1px solid #000;
 }
 
 .card-header-tabs {
@@ -8900,8 +8900,32 @@ fieldset:disabled .btn {
   line-height: 2 !important;
 }
 
+.lh-18 {
+  line-height: 18px !important;
+}
+
+.lh-19 {
+  line-height: 19px !important;
+}
+
+.lh-26 {
+  line-height: 26px !important;
+}
+
+.lh-29 {
+  line-height: 29px !important;
+}
+
 .lh-32 {
   line-height: 32px !important;
+}
+
+.lh-35 {
+  line-height: 35px !important;
+}
+
+.lh-50 {
+  line-height: 50px !important;
 }
 
 .text-start {
@@ -13310,6 +13334,18 @@ img {
   vertical-align: middle;
 }
 
+.fontSquada {
+  font-family: 'Squada One';
+}
+
+.fontPaytone {
+  font-family: 'Paytone One';
+}
+
+header {
+  border-bottom: 1px solid #000;
+}
+
 .navbar-brand {
   width: 85px;
   height: 18px;
@@ -13318,15 +13354,22 @@ img {
   background-size: cover;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 992px) {
   .navbar-brand {
     width: 190px;
     height: 40px;
   }
 }
 
-header {
-  border-bottom: 1px solid #000;
+.search {
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .search {
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
 }
 
 .search .form-control {
@@ -13336,9 +13379,65 @@ header {
   display: none;
 }
 
-@media (min-width: 960px) {
+@media (min-width: 992px) {
   .search .form-control {
     display: block;
+  }
+}
+
+.navbar-nav {
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 37px;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    top: 104px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    background: none;
+    position: relative;
+    top: 0px;
+  }
+}
+
+.navbar-nav .nav-item {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.navbar-nav .nav-item .material-icons {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item {
+    border-right: 1px solid black;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .navbar-nav .nav-item .btn-wallet {
+    display: none;
+  }
+  .navbar-nav .nav-item .material-icons {
+    display: block;
+  }
+}
+
+.navbar-nav .nav-item.borderBottom {
+  border-bottom: 1px solid #000;
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-item.borderBottom {
+    border-bottom: 0px;
   }
 }
 
@@ -13374,10 +13473,154 @@ header {
   color: #fff;
 }
 
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.textVertical {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+}
+
+.blackBlock {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .blackBlock {
+    display: block;
+  }
+}
+
+.card {
+  border: 0px;
+  border-bottom: 2px solid black;
+}
+
+@media (min-width: 992px) {
+  .card {
+    border: 1px solid black;
+  }
+  .card.cardBorder2 {
+    border-top: 0px;
+    border-right: 0px;
+  }
+  .card.cardBorder3 {
+    border-top: 0px;
+  }
+}
+
+.card .imgBlock {
+  height: 340px;
+}
+
+.card .imgBlock img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card .card-body {
+  height: 100%;
+  position: relative;
+}
+
+.card .btn-white {
+  position: absolute;
+  right: 12px;
+  bottom: 24px;
+}
+
+@media (min-width: 992px) {
+  .card .btn-white {
+    right: 24px;
+  }
+}
+
+.rankingBlock {
+  border: 1px solid black;
+}
+
+.rankingBlock .num {
+  width: 11.3%;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@media (min-width: 992px) {
+  .rankingBlock .num {
+    position: absolute;
+    z-index: 10;
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    font-size: 32px;
+    line-height: 45px;
+    left: 0;
+    top: 0;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+
+.rankingBlock .imgBlock {
+  width: 87px;
+  height: 91px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.rankingBlock .imgBlock img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .rankingBlock .imgBlock {
+    position: relative;
+    width: 100%;
+    height: 374px;
+    border: 0px;
+  }
+  .rankingBlock .imgBlock img {
+    -o-object-position: center top;
+       object-position: center top;
+  }
+}
+
+.rankingBlock .card-body {
+  width: 62.7%;
+}
+
+.rankingBlock .card-body .card-title {
+  border-bottom: 1px solid black;
+}
+
+@media (min-width: 992px) {
+  .rankingBlock .card-body {
+    width: 100%;
+    border-top: 1px solid black;
+  }
+}
+
+@media (min-width: 992px) {
+  .rankingBlock2 .num {
+    position: unset;
+    width: 12.9%;
+    height: 90px;
+    border: 0px;
+    border-right: 1px solid black;
+    background: none;
+  }
+  .rankingBlock2 .imgBlock {
+    position: unset;
+    width: 20.9%;
+    height: 90px;
+  }
+  .rankingBlock2 .card-body {
+    width: 66.1%;
+    border-top: 0;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */

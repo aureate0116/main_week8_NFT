@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Boostrap Index</title>
+  <title>ART NFT Home Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -27,18 +27,15 @@
 
 
 
-<header class="container-fluid  px-2">
+<header class="container-fluid  px-0 py-md-0 py-3 position-relative">
   <nav class="navbar navbar-expand-lg navbar-light p-0">
-    <div class="container px-0 d-flex justify-content-between"> 
-      <!-- nav內的container為必須 ? why ? -->
-      
-      <a class="navbar-brand" href="#"></a>
+    <div class="container px-2 d-flex justify-content-between"> 
 
-      <div class="d-flex ">
+      <h1><a class="navbar-brand" href="#"></a></h1>
+
+      <div class="d-flex  ">
         <!--search bar-->
-        
-       
-        <div class="search py-md-8 px-md-9 d-flex me-md-0 me-4 border-start border-end align-items-center">
+        <div class="search py-md-8 px-md-9 d-flex me-md-0 me-4 align-items-center">
           <input class="form-control me-3 fs-6 lh-base text-dark bg-light" type="search" placeholder="Search" aria-label="Search" value="搜尋作品名稱、藝術家名稱">
 
           <button class="btn p-0  d-flex align-items-center" type="submit">
@@ -46,132 +43,201 @@
           </button>
         </div>
         
+       
+          <button class="navbar-toggler border-0 p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon "></span> -->
+          <span class="material-icons text-black fs-5">menu</span>
 
-        <button class="navbar-toggler border-0 p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon "></span> -->
-        <span class="material-icons text-black fs-5">menu</span>
-        </button>
+          </button>
         
-        <div class="collapse navbar-collapse " id="navbarContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item border-end">
-              <a class="nav-link px-md-9 py-md-8 text-black fw-bold "  href="#">探索</a>
-              <!--隱藏 aria-current="page"  class="active"-->
-            </li>
-            <li class="nav-item border-end">
-              <a class="nav-link px-md-9 py-md-8 text-black fw-bold" href="#">市值</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ps-md-9 py-md-8" href="#">
-                <span class="material-icons">
-                  wallet
-                  </span></a>
-            </li>
-          </ul>
-        </div>
+          <div class="collapse navbar-collapse " id="navbarContent">
+            <ul class="navbar-nav px-2 me-auto mb-2 mb-lg-0 text-center">
+                <!-- 隱藏li aria-current="page"  class="active"-->
+              <li class="nav-item borderBottom">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 py-4 text-black fw-bold"  href="#">探索</a>
+                
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 py-4 text-black fw-bold" href="#">市值</a>
+              </li>
+              <li class="nav-item  border-0 mb-md-0 mb-4">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 p-0 text-black " href="#">
+                  <span class="material-icons text-black">wallet </span>
+                  <span class="btn-wallet btn btn-primary w-100 py-2 link-white border">連結錢包</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
       </div>
     </div>  <!---end nav - container-->
   </nav>
 </header>
 
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    
+
+<main class="container px-0">
+  
+  <div class="card mt-md-8">
+    <div class="row g-0">
+      <div class="col-md-1 blackBlock"> 
+        <div class=" bg-black w-100 mh-100 p-md-4 text-white textVertical d-flex align-items-center">
+          <h2 class="fontSquada fs-1 lh-50 d-inline">Recommend</h2>
+          <p class="fs-4 lh-26 d-inline mt-3">推 薦 系 列</p>
         </div>
       </div>
-    </nav> -->
 
-    
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="col-md-7">
+        <img src="./assets/images/art01.jpg" class="card-img-top" alt="art">
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+      <div class="col-md-4">
+        <div class="card-body py-7 px-2 px-md-4 pt-xl-10 py-md-3">
+          <p class="fs-5 lh-19 fontSquada mb-1">Kemus Wu</p>
+          <h2 class="card-title fs-3 lh-35 mb-4 fw-bold">瞳孔:流動的脈絡</h2>
+          <p class="card-text mb-4">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+          <p class="text-end">
+          <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a></p>
+        </div>
       </div>
     </div>
+  </div> <!--end card 1-->
+
+  <div class="row g-0">
+    <div class="col-xl-6">
+      <div class="card cardBorder2">
+        <div class="row g-0 flex-row-reverse">
+          <div class="col-md-6">
+            <div class="imgBlock">
+            <img src="./assets/images/art02.jpg" class="card-img-top" alt="art">
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card-body py-7 px-2 px-md-4">
+              <p class="fs-5 lh-19 fontSquada mb-1">Joanne</p>
+              <h2 class="card-title fs-3 lh-35 mb-4 fw-bold">海洋波度</h2>
+              <p class="card-text mb-4">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+              <p class="text-end">
+              <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--end card 2 col-md-6-->
+
+    <div class="col-xl-6">
+      <div class="card cardBorder3">
+        <div class="row g-0 flex-row-reverse">
+          <div class="col-md-6">
+            <div class="imgBlock">
+            <img src="./assets/images/art21.jpg" class="card-img-top" alt="art">
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card-body py-7 px-2 px-md-4">
+              <p class="fs-5 lh-19 fontSquada mb-1">Michael</p>
+              <h2 class="card-title fs-3 lh-35 mb-4 fw-bold">我家窗前的鳥</h2>
+              <p class="card-text mb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+              <p class="text-end">
+              <a href="#" role="button" class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--end card 3 col-md-6--> 
   </div>
-</div>
 
 
-    <footer class="footer">
-      footer
-    </footer>
+  <!--Ranking 市價排行榜 -->
+  <section class="mt-md-10 mt-8 px-2 px-md-0">
+    <div class="d-flex justify-content-between align-items-end border-bottom mb-4">
+      <h2 class="fs-1 fontSquada lh-50">Ranking 
+        <span class="fs-4 lh-29 fw-bold d-none d-sm-inline-block">市價排行榜</span></h2>
+        <a href="#" role="button" class="btn btn-border btn-triangle fs-5 lh-19 fontSquada py-1 px-9 ">more</a>
+    </div>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card rankingBlock">
+          <div class="d-flex flex-md-column align-items-center">
+
+            <div class="num d-flex justify-content-center">
+              <p class="fontPaytone">1</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art04.jpg" class="card-img-top" alt="art">
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1 p-md-3 m-0">散步遇到的女人</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-md-3">
+                <span>Zoe Jiang</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div><!--end card 1-->
+      </div><!--end col-md-4-->
+      
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+
+
+    <br/>
+    <!--rankingBlock style2-->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card rankingBlock rankingBlock2">
+          <div class="d-flex align-items-center">
+
+            <div class="num d-flex justify-content-center align-items-center">
+              <p class="fontPaytone">4</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art29.jpg" class="card-img-top" alt="art">
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1">追求者送我的花</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1">
+                <span>Michael</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div><!--end card 4-->
+      </div><!--end col-md-4-->
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+
+
+  </section>
+
+
+
+</main>
+
+<footer class="footer">
+  <div class="mb-1 border-top border-1"></div>
+  <div class="py-4 border-top border-4">
+    <p class="text-center fs-6 lh-base">© ART NFT. All Rights Reserved</p>
+  </div>
+    
+</footer>
+
+
+<script src="./assets/js/all.js"></script>
+</body>
 
 </html>
