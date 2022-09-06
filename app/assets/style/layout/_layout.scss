@@ -1,3 +1,6 @@
+header{
+    border-bottom: 1px solid #000;
+}
 .navbar-brand{
     width: 85px;
     height: 18px;
@@ -11,18 +14,13 @@
     }
 }
 
-header{
-    border-bottom: 1px solid #000;
-}
-
-// .navbar .material-icons{
-//    width: 21px;
-//    height: 18px;
-// }
-
 .search{
-    // border-left:1px solid;
-    // border-right:1px solid;
+    border:none;
+    @include desktop(){
+        border-left:1px solid;
+        border-right:1px solid;
+    }
+
     .form-control{
         width: 288px;
         height: 24px;
@@ -31,6 +29,55 @@ header{
         @include desktop(){
             display: block;
         }
+    }
+}
+
+.navbar-nav{
+    background-color: #fff;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:37px;  // 50px;
+    z-index: 10;
+   
+    @include pad(){
+        top:104px;
+    }
+
+    @include desktop(){
+        background:none;
+        position: relative;
+        top:0px;
+    }
+
+    .nav-item{
+        font-size: 18px;
+        line-height: 26px;
+        .material-icons{
+            display: none;
+        }
+
+        @include desktop(){   
+            border-right: 1px solid black;
+            font-size: 16px;
+            line-height: 24px;
+
+            .btn-wallet{
+                display: none;
+            }
+            .material-icons{
+                display: block;
+            }
+        }
+
+    
+
+       &.borderBottom{
+            border-bottom: 1px solid #000;
+            @include desktop(){   
+                border-bottom:0px;
+            }
+       }
     }
 }
 

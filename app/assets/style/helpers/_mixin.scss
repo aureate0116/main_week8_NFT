@@ -1,5 +1,26 @@
 @mixin desktop(){  
-   @media (min-width:960px) {
+   @media (min-width:992px) {  
         @content; 
    }
 }
+
+@mixin pad(){  
+   @media (min-width:768px) {
+        @content; 
+   }
+}
+
+// @mixin mobile(){  
+//    @media (min-width:576px) {
+//         @content; 
+//    }
+// }
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px, 
+//   xl: 1200px,
+//   xxl: 1400px
+// ) !default;

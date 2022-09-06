@@ -1,10 +1,14 @@
 //google fonts & icon
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-//中文 'Noto Sans TC',英文 'Squada One'
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap');
+//中文 'Noto Sans TC',英文 'Squada One' 'Paytone One'
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap');
+
+//swiper
+@import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
 
 @import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/rfs/scss"; //RFS想響應式文字
 
 // 修改 bootstrap 自定義變數
 // @import "./helpers/variables_2";
@@ -17,13 +21,10 @@
 // custom 順序: mixin > reset > base > layout > components(module) > pages (使用bootstrap 不用 reset)
 @import './helpers/mixin';
 @import './helpers/base';
-
+@import "./helpers/helpers";
 
 
 @import './layout/layout';
 @import './components/buttons';
-
-
-
-
+@import './components/swiper';
 @import './pages/index';

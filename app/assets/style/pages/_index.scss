@@ -1,5 +1,272 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+//card 1~3
+
+.textVertical{
+  writing-mode:vertical-lr;
 }
+
+.blackBlock{
+  display: none;
+
+  @include desktop{
+    display: block;
+  }
+}
+
+.card{
+  border:0px;
+  border-bottom: 2px solid black;
+
+  @include desktop{
+    border: 1px solid black;
+    
+    &.cardBorder2{
+      border-top: 0px;
+      border-right:0px;
+    }
+    &.cardBorder3{
+      border-top: 0px;
+    }
+  }
+
+
+  .imgBlock{
+    height: 340px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  //btn position
+  .card-body{
+    height: 100%;
+    position: relative;
+  }
+  .btn-white{
+    position: absolute;
+    right:12px;
+    bottom:24px;
+
+    @include desktop{
+      right:24px;
+    }
+  }
+
+} //end card 1~3
+
+
+//section ranking
+.rankingBlock{
+  border: 1px solid black;
+
+  .num{
+    width: 11.3%;
+    font-size: 24px;
+    line-height: 24px;
+    @include desktop{
+      position: absolute;
+      z-index: 10;
+      width: 64px;
+      height: 64px;
+      background-color: #fff;
+      font-size: 32px;
+      line-height: 45px;
+      left:0;
+      top:0;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      
+    }
+  }
+
+  .imgBlock{
+    width:87px;
+    height: 91px;
+    border-left:1px solid black;
+    border-right:1px solid black;
+    position: relative;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @include desktop{
+      position: relative;
+      width: 100%;
+      height: 374px;
+      img{
+        object-position: center top ;
+      }
+      border:0px;
+    }
+
+
+  }
+
+
+  //hover button 1-3
+  .imgBlock{
+    position: relative;
+    .btnHover{
+      display:none;
+      position: absolute;
+      bottom:0;
+      right:0;
+    }
+  
+    &:hover{
+      .btnHover{   
+        z-index:10;
+        background-color: $primary;
+        color:#fff;
+      }
+      .btn-triangle::after{
+        border-bottom: 16px black solid;
+      }
+
+      @include desktop{
+        .btnHover{
+          display:block;
+        }
+        &::after{
+          content:'';
+          width: 100%;
+          height: 100%;
+          background-color: black;
+          opacity: 50%;
+          position: absolute;
+          left:0;
+          top:0;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  //end hover button 1-3
+
+  .card-body{
+    width: 62.7%;
+    .card-title{
+      border-bottom:1px solid black;
+    }
+    @include desktop{
+      width: 100%;
+      border-top: 1px solid black;
+    }
+
+  }
+}
+
+
+.rankingBlock2{
+  @include desktop{
+    .num{
+      position: unset;
+      width: 12.9%;
+      height: 90px;
+      border:0px;
+      border-right: 1px solid black;
+      background: none;
+    }
+    .imgBlock{
+      //position: unset;
+      width:20.9%;
+      height: 90px;
+    }
+    .card-body{
+      width: 66.1%;
+      border-top:0;
+    }
+  }
+}
+
+//hover button 4-6
+.imgBlock{
+  .btnHover2{
+    display: none;
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: 10;
+  }
+
+  @include desktop{
+    &:hover{
+      .btnHover2.btn-triangle::after{
+        border-bottom: 16px $primary solid !important;
+      }
+      .btnHover2{
+        display: block;
+      }
+    }
+  }
+}
+//end hover buttom 4-6
+
+
+//section artwork 
+.artWork{
+  .card{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//hover
+.artWorkPhoto{
+  height: 254px;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  position: relative;
+
+  .artWorkText ,.btn{
+   // display: none;
+  }
+
+  @include desktop{
+   // &:hover{
+      &::after{
+        content: '';
+        background-color: #000;
+        opacity: 70%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 1; 
+      }
+      .artWorkText{
+        position: absolute;
+        border: 1px solid #fff;
+        z-index: 10;
+        top:0;
+        left:0;
+       // width: 100%;
+        height: 100%;
+        display: block;
+    
+      }
+      .btn{
+        position: absolute;
+        z-index: 10;
+        right: 32px;
+       // bottom:32px;
+        display: block;
+      }
+    //} //end hover
+  }
+
+  // @include pad{
+  //   .artWorkText ,.btn{
+  //     display: none;
+  //   }
+  // }
+
+}
+
+//end section artwork 

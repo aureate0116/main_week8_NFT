@@ -11,34 +11,16 @@
 </head>
 
 <body>
-    <!-- <div class="fs-4 text-primary  lh-32" style="font-family: 'Squada One';  ">font-size test  測試字體</div>  
 
-    <div class="fs-7 text-primary lh-base">font-size test  測試字體</div>  
-
-    <div class="fs-5 text-primary lh-sm"> 測試字體</div>  
-
-<div style="background-color: blue;">
-<button class="btn btn-triangle btn-white border-black">MORE</button>
-<button class="btn btn-triangle btn-border">MORE</button>
-<button class="btn btn-primary border text-c">連結錢包</button>
-</div>
-<br/> -->
-
-
-
-
-<header class="container-fluid  px-2">
+<header class="container-fluid  px-0 py-md-0 py-3 position-relative">
   <nav class="navbar navbar-expand-lg navbar-light p-0">
-    <div class="container px-0 d-flex justify-content-between"> 
-      <!-- nav內的container為必須 ? why ? -->
-      
-      <a class="navbar-brand" href="#"></a>
+    <div class="container-lg px-2 d-flex justify-content-between"> 
 
-      <div class="d-flex ">
+      <h1><a class="navbar-brand" href="#"></a></h1>
+
+      <div class="d-flex  ">
         <!--search bar-->
-        
-       
-        <div class="search py-md-8 px-md-9 d-flex me-md-0 me-4 border-start border-end align-items-center">
+        <div class="search py-md-8 px-md-9 d-flex me-md-0 me-4 align-items-center">
           <input class="form-control me-3 fs-6 lh-base text-dark bg-light" type="search" placeholder="Search" aria-label="Search" value="搜尋作品名稱、藝術家名稱">
 
           <button class="btn p-0  d-flex align-items-center" type="submit">
@@ -46,80 +28,91 @@
           </button>
         </div>
         
+       
+          <button class="navbar-toggler border-0 p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon "></span> -->
+          <span class="material-icons text-black fs-5">menu</span>
 
-        <button class="navbar-toggler border-0 p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon "></span> -->
-        <span class="material-icons text-black fs-5">menu</span>
-        </button>
+          </button>
         
-        <div class="collapse navbar-collapse " id="navbarContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item border-end">
-              <a class="nav-link px-md-9 py-md-8 text-black fw-bold "  href="#">探索</a>
-              <!--隱藏 aria-current="page"  class="active"-->
-            </li>
-            <li class="nav-item border-end">
-              <a class="nav-link px-md-9 py-md-8 text-black fw-bold" href="#">市值</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ps-md-9 py-md-8" href="#">
-                <span class="material-icons">
-                  wallet
-                  </span></a>
-            </li>
-          </ul>
-        </div>
+          <div class="collapse navbar-collapse " id="navbarContent">
+            <ul class="navbar-nav px-2 me-auto mb-2 mb-lg-0 text-center">
+                <!-- 隱藏li aria-current="page"  class="active"-->
+              <li class="nav-item borderBottom">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 py-4 text-black fw-bold"  href="#">探索</a>
+                
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 py-4 text-black fw-bold" href="#">市值</a>
+              </li>
+              <li class="nav-item  border-0 mb-md-0 mb-4">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 p-0 text-black " href="#">
+                  <span class="material-icons text-black">wallet </span>
+                  <span class="btn-wallet btn btn-primary w-100 py-2 link-white border">連結錢包</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
       </div>
     </div>  <!---end nav - container-->
   </nav>
 </header>
 
 
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div>
-      </div>
-    </nav> -->
-
     <%- contents %>
 
-    <footer class="footer">
-      footer
-    </footer>
+<footer class="footer">
+  <div class="mb-1 border-top border-1"></div>
+  <div class="py-4 border-top border-4">
+    <p class="text-center fs-6 lh-base">© ART NFT. All Rights Reserved</p>
+  </div>
+    
+</footer>
 
-    <script src="./assets/js/vendors.js"></script>
-    <script src="./assets/js/all.js"></script>
-  </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/all.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        loop: true,
+       //slidesPerView: "auto",
+        spaceBetween: 24,
+        slidesPerView: 3,
+        coverflowEffect: {
+          rotate: 0,  // y軸旋轉角度
+          stretch: 0,  //每个slide之间的拉伸值，越大slide靠得越紧
+          depth: 0, //slide的位置深度。值越大z轴距离越远，看起来
+          modifier: 1, //depth和rotate和stretch的倍率
+          slideShadows: false, //是否开启slide阴影
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          992: {
+            centeredSlides: false,
+            slidesPerView: 1,
+          },
+          1200: {
+            centeredSlides: true,
+            slidesPerView: 3,
+            spaceBetween: 24,
+          }
+        }
+
+      });
+
+</script>
+
+</body>
 
 </html>

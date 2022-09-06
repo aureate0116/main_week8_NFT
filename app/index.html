@@ -1,58 +1,412 @@
 ---
-title: Boostrap Index
+title: ART NFT Home Page
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+<main class="container-lg px-0">
+  
+  <div class="card mt-lg-8">
+    <div class="row g-0">
+      <div class="col-md-1 blackBlock bg-black"> 
+        <div class=" w-100 p-md-4 text-white textVertical d-flex align-items-center">
+          <h2 class="fontSquada fs-1 lh-50 d-inline">Recommend</h2>
+          <p class="fs-4 lh-26 d-inline mt-3">推 薦 系 列</p>
+        </div>
+      </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="col-md-7">
+        <img src="./assets/images/art01.jpg" class="card-img-top" alt="art">
       </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+      <div class="col-md-4">
+        <div class="card-body py-7 px-2 px-md-4 pt-xl-10 py-md-3">
+          <p class="fs-5 lh-19 fontSquada mb-1">Kemus Wu</p>
+          <h2 class="card-title fs-3 lh-35 mb-4 fw-bold">瞳孔:流動的脈絡</h2>
+          <p class="card-text mb-4">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+          <p class="text-end">
+          <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a></p>
+        </div>
       </div>
     </div>
+  </div> <!--end card 1-->
+
+  <div class="row g-0">
+    <div class="col-xl-6">
+      <div class="card cardBorder2">
+        <div class="row g-0 flex-row-reverse">
+          <div class="col-md-6">
+            <div class="imgBlock">
+            <img src="./assets/images/art02.jpg" class="card-img-top" alt="art">
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card-body py-7 px-2 px-md-4">
+              <p class="fs-5 lh-19 fontSquada mb-1">Joanne</p>
+              <h2 class="card-title fs-3 lh-35 mb-4 fw-bold">海洋波度</h2>
+              <p class="card-text mb-4">海洋的奧秘向我們揭示了深不可測的一面，它的深度——反映了我們的恐懼、同時也吸引著我們。</p>
+              <p class="text-end">
+              <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--end card 2 col-md-6-->
+
+    <div class="col-xl-6">
+      <div class="card cardBorder3">
+        <div class="row g-0 flex-row-reverse">
+          <div class="col-md-6">
+            <div class="imgBlock">
+            <img src="./assets/images/art21.jpg" class="card-img-top" alt="art">
+            </div>
+          </div>
+      
+          <div class="col-md-6">
+            <div class="card-body py-7 px-2 px-md-4">
+              <p class="fs-5 lh-19 fontSquada mb-1">Michael</p>
+              <h2 class="card-title fs-3 lh-35 mb-4 fw-bold">我家窗前的鳥</h2>
+              <p class="card-text mb-4">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+              <p class="text-end">
+              <a href="#" role="button" class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--end card 3 col-md-6--> 
   </div>
-</div>
+
+
+  <!--Ranking 市價排行榜 -->
+  <section class="mt-md-10 mt-8 px-2 px-md-0">
+    <div class="d-flex justify-content-between align-items-end border-bottom mb-4">
+      <h2 class="fs-1 fontSquada lh-50">Ranking 
+        <span class="fs-4 lh-29 fw-bold d-none d-sm-inline-block">市價排行榜</span></h2>
+        <a href="#" role="button" class="btn btn-border btn-triangle fs-5 lh-19 fontSquada py-1 px-9 ">more</a>
+    </div>
+
+
+    <div class="row gy-lg-4 gy-3">
+      <div class="col-lg-4 col-md-12">
+        <div class="card rankingBlock ">
+          <div class="d-flex flex-lg-column align-items-center">
+
+            <div class="num d-flex justify-content-center">
+              <p class="fontPaytone">1</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art04.jpg" class="card-img-top" alt="art">
+             
+              <a href="#" role="button" class="btn btnHover btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1 p-md-3 m-0">散步遇到的女人</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-md-3">
+                <span>Zoe Jiang</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div>
+      </div><!--end card1 col-md-4-->
+      
+      <div class="col-lg-4 col-md-12">
+        <div class="card rankingBlock">
+          <div class="d-flex flex-lg-column align-items-center">
+
+            <div class="num d-flex justify-content-center">
+              <p class="fontPaytone">2</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art05.jpg" class="card-img-top" alt="art">
+            <a href="#" role="button" class="btn btnHover btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1 p-md-3 m-0">爆炸頭的母親</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-md-3">
+                <span>Yui</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div>
+      </div><!--end card2 col-md-4-->
+
+      <div class="col-lg-4 col-md-12">
+        <div class="card rankingBlock">
+          <div class="d-flex flex-lg-column align-items-center">
+
+            <div class="num d-flex justify-content-center">
+              <p class="fontPaytone">3</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art06.jpg" class="card-img-top" alt="art">
+            <a href="#" role="button" class="btn btnHover btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1 p-md-3 m-0">夏天的時候</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-md-3">
+                <span>Bug Lin</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div>
+      </div><!--end card3 col-md-4-->
+    
+    <!--rankingBlock style2-->
+      <div class="col-lg-4">
+        <div class="card rankingBlock rankingBlock2">
+          <div class="d-flex align-items-center">
+
+            <div class="num d-flex justify-content-center align-items-center">
+              <p class="fontPaytone">4</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art29.jpg" class="card-img-top" alt="art">
+            <a href="#" role="button" class="btn btnHover2 btn-triangle fs-5 lh-19 fontSquada link-white px-4 py-7">more</a>
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1">追求者送我的花</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1">
+                <span>Michael</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div>
+      </div><!--end card 4 col-md-4-->
+      
+      <div class="col-lg-4">
+        <div class="card rankingBlock rankingBlock2">
+          <div class="d-flex align-items-center">
+
+            <div class="num d-flex justify-content-center align-items-center">
+              <p class="fontPaytone">5</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art07.jpg" class="card-img-top" alt="art">
+            <a href="#" role="button" class="btn btnHover2 btn-triangle fs-5 lh-19 fontSquada link-white px-4 py-7">more</a>
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1">今天釣到的魚</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1">
+                <span>今天釣到的魚</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div>
+      </div><!--end card 4 col-md-4-->
+
+      <div class="col-lg-4">
+        <div class="card rankingBlock rankingBlock2">
+          <div class="d-flex align-items-center">
+
+            <div class="num d-flex justify-content-center align-items-center">
+              <p class="fontPaytone">6</p>
+            </div>
+ 
+            <div class="imgBlock">
+            <img src="./assets/images/art08.jpg" class="card-img-top" alt="art">
+            <a href="#" role="button" class="btn btnHover2 btn-triangle fs-5 lh-19 fontSquada link-white px-4 py-7">more</a>
+            </div>
+
+            <div class="card-body p-0">
+              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1">人生中的貓咪們</h3>
+              
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1">
+                <span>Even Lai</span>
+                <span>300</span>
+              </p>
+            </div>        
+          </div>     
+        </div>
+      </div><!--end card 4 col-md-4-->
+
+    </div><!--end row-->
+  </section><!--end ranking-->
+
+
+
+  <!--Artist 熱門藝術家 -->
+  <section class="mt-md-10 mt-8 px-2 px-md-0">
+    <div class="d-flex justify-content-between align-items-end border-bottom mb-4">
+      <h2 class="fs-1 fontSquada lh-50">Artist 
+        <span class="fs-4 lh-29 fw-bold d-none d-sm-inline-block">熱門藝術家</span></h2>
+        <a href="#" role="button" class="btn btn-border btn-triangle fs-5 lh-19 fontSquada py-1 px-9 ">more</a>
+    </div>
+
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper d-flex align-items-center">
+        <div class="swiper-slide">
+            <img class="artistPhoto" src="./assets/images/artist01.jpg" alt="artist">
+            <h3 class="display-1 artistName text-white fontSquada  text-start">Antony Wu</h3>
+            <p class="p-4 artistContent bg-white text-start">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+        </div> <!--end swiper-slide-->
+
+        <div class="swiper-slide">
+          
+          <img class="artistPhoto" src="./assets/images/artist02.jpg" alt="artist">
+          <h3 class="display-1 artistName text-white fontSquada  text-start">Antony Wu</h3>
+          <p class="p-4 artistContent bg-white text-start">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+    
+        </div> <!--end swiper-slide-->
+
+        <div class="swiper-slide">
+          <img class="artistPhoto" src="./assets/images/artist03.jpg" alt="artist">
+          <h3 class="display-1 artistName text-white fontSquada  text-start">Antony Wu</h3>
+          <p class="p-4 artistContent bg-white text-start">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+        </div> <!--end swiper-slide-->
+
+        <div class="swiper-slide">
+          <img class="artistPhoto" src="./assets/images/artist04.jpg" alt="artist">
+          <h3 class="display-1 artistName text-white fontSquada  text-start">Antony Wu</h3>
+          <p class="p-4 artistContent bg-white text-start">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+        </div> <!--end swiper-slide-->
+
+        <div class="swiper-slide">
+          <img class="artistPhoto" src="./assets/images/artist05.jpg" alt="artist">
+          <h3 class="display-1 artistName text-white fontSquada  text-start">Antony Wu</h3>
+          <p class="p-4 artistContent bg-white text-start">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+          <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+        </div> <!--end swiper-slide-->
+
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+
+
+
+  </section><!--end Artist  -->
+
+  <!--Artwork 最新藝術品 -->
+  <section class="artWork mt-md-10 mt-8 px-2 px-md-0">
+    <div class="d-flex justify-content-between align-items-end border-bottom mb-4">
+      <h2 class="fs-1 fontSquada lh-50">Artwork 
+        <span class="fs-4 lh-29 fw-bold d-none d-sm-inline-block">最新藝術品</span></h2>
+        <a href="#" role="button" class="btn btn-border btn-triangle fs-5 lh-19 fontSquada py-1 px-9 ">more</a>
+    </div>
+
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 743px;">
+
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="m-4 artWorkPhoto">
+            <img src="./assets/images/art09.jpg" alt="art">
+            <div class="artWorkText text-white m-3 p-3">
+              <p> 唯一想擁有的人，唯一不可以擁有的</p>
+              <span class="fontSquada">300</span>
+            </div>
+           
+            <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
+          </div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">區塊戀-他的私生活</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="p-4"><img src="./assets/images/art10.jpg" alt="art"></div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">夏娃的醜聞</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="p-4"><img src="./assets/images/art02.jpg" alt="art"></div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">藍色啤酒海</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="p-4"><img src="./assets/images/art11.jpg" alt="art"></div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">沒有人愛我</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="p-4"><img src="./assets/images/art12.jpg" alt="art"></div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">不哭不哭眼淚是珍珠</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="p-4"><img src="./assets/images/art03.jpg" alt="art"></div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">十分鐘就到</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="p-4"><img src="./assets/images/art04.jpg" alt="art"></div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">我這樣有美嗎</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card border-0">
+          <div class="p-4"><img src="./assets/images/art27.jpg" alt="art"></div>
+          <div class="card-body bg-light border-bottom py-3 px-0">
+            <h3 class="card-title fs-6 lh-base">我真的受傷了</h3>
+          </div>
+        </div><!--end card-->
+      </div>
+    </div><!--end row-->
+
+
+
+  </section><!--end Artwork  -->
+
+  <!--Join Us 創建並出售你的藝術品 -->
+  <section class="mt-md-10 mt-8 px-2 px-md-0">
+    <div class="d-flex justify-content-between align-items-end border-bottom mb-4">
+      <h2 class="fs-1 fontSquada lh-50">Join Us 
+        <span class="fs-4 lh-29 fw-bold d-none d-sm-inline-block">創建並出售你的藝術品</span></h2>
+        <!-- <a href="#" role="button" class="btn btn-border btn-triangle fs-5 lh-19 fontSquada py-1 px-9 ">more</a> -->
+    </div>
+  </section> <!--end Join Us -->
+</main>
+
+
+
+
+
+
+
