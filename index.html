@@ -166,7 +166,7 @@
               
               <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-md-3">
                 <span>Zoe Jiang</span>
-                <span>300</span>
+                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
               </p>
             </div>        
           </div>     
@@ -191,7 +191,7 @@
               
               <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-md-3">
                 <span>Yui</span>
-                <span>300</span>
+                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
               </p>
             </div>        
           </div>     
@@ -216,7 +216,7 @@
               
               <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-md-3">
                 <span>Bug Lin</span>
-                <span>300</span>
+                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
               </p>
             </div>        
           </div>     
@@ -238,11 +238,11 @@
             </div>
 
             <div class="card-body p-0">
-              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1">追求者送我的花</h3>
+              <h3 class="card-title fs-5 lh-17 fw-bold py-3 px-1 p-xxl-3 px-xl-3 mb-0">追求者送我的花</h3>
               
-              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1">
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-xxl-3 px-xl-3">
                 <span>Michael</span>
-                <span>300</span>
+                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
               </p>
             </div>        
           </div>     
@@ -263,16 +263,16 @@
             </div>
 
             <div class="card-body p-0">
-              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1">今天釣到的魚</h3>
+              <h3 class="card-title fs-5 lh-17 fw-bold py-3 px-1 p-xxl-3 px-xl-3 mb-0">今天釣到的魚</h3>
               
-              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1">
-                <span>今天釣到的魚</span>
-                <span>300</span>
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-xxl-3 px-xl-3">
+                <span>Wei JJ</span>
+                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
               </p>
-            </div>        
+            </div>       
           </div>     
         </div>
-      </div><!--end card 4 col-md-4-->
+      </div><!--end card 5 col-md-4-->
 
       <div class="col-lg-4">
         <div class="card rankingBlock rankingBlock2">
@@ -288,16 +288,16 @@
             </div>
 
             <div class="card-body p-0">
-              <h3 class="card-title fs-5 lh-18 fw-bold py-3 px-1">人生中的貓咪們</h3>
+              <h3 class="card-title fs-5 lh-17 fw-bold py-3 px-1 p-xxl-3 px-xl-3 mb-0">人生中的貓咪們</h3>
               
-              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1">
+              <p class="card-text d-flex justify-content-between fontSquada fw-bold p-1 px-xxl-3 px-xl-3">
                 <span>Even Lai</span>
-                <span>300</span>
+                <span><i class="fa-brands fa-ethereum me-1"></i>300</span>
               </p>
             </div>        
           </div>     
         </div>
-      </div><!--end card 4 col-md-4-->
+      </div><!--end card 6 col-md-4-->
 
     </div><!--end row-->
   </section><!--end ranking-->
@@ -370,7 +370,7 @@
         <a href="#" role="button" class="btn btn-border btn-triangle fs-5 lh-19 fontSquada py-1 px-9 ">more</a>
     </div>
 
-    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 743px;">
+    <div class="row" data-masonry='{"percentPosition": true, "horizontalOrder":true }'style="position: relative; height: 743px;">
 
       <div class="col-sm-6 col-lg-3 mb-4">
         <div class="card border-0">
@@ -378,7 +378,7 @@
             <img src="./assets/images/art09.jpg" alt="art">
             <div class="artWorkText text-white m-3 p-3">
               <p> 唯一想擁有的人，唯一不可以擁有的</p>
-              <span class="fontSquada">300</span>
+              <span class="fontSquada"><i class="fa-brands fa-ethereum me-1"></i>300</span>
             </div>
            
             <a href="#" role="button"  class="btn btn-white btn-triangle border fs-5 lh-19 fontSquada py-1 px-9">more</a>
@@ -477,47 +477,10 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/vendors.js"></script>
 <script src="./assets/js/all.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        loop: true,
-       //slidesPerView: "auto",
-        spaceBetween: 24,
-        slidesPerView: 3,
-        coverflowEffect: {
-          rotate: 0,  // y軸旋轉角度
-          stretch: 0,  //每个slide之间的拉伸值，越大slide靠得越紧
-          depth: 0, //slide的位置深度。值越大z轴距离越远，看起来
-          modifier: 1, //depth和rotate和stretch的倍率
-          slideShadows: false, //是否开启slide阴影
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          992: {
-            centeredSlides: false,
-            slidesPerView: 1,
-          },
-          1200: {
-            centeredSlides: true,
-            slidesPerView: 3,
-            spaceBetween: 24,
-          }
-        }
-
-      });
-
-</script>
 
 </body>
 

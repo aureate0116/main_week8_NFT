@@ -8,7 +8,7 @@ $(function () {
     loop: true,
     //slidesPerView: "auto",
     spaceBetween: 24,
-    slidesPerView: 3,
+    slidesPerView: 1,
     coverflowEffect: {
       rotate: 0,
       // y軸旋轉角度

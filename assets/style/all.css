@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
 /*!
@@ -8901,6 +8902,10 @@ fieldset:disabled .btn {
   line-height: 2 !important;
 }
 
+.lh-17 {
+  line-height: 17px !important;
+}
+
 .lh-18 {
   line-height: 18px !important;
 }
@@ -13484,7 +13489,6 @@ header {
 }
 
 .swiper-slide {
-  width: 306px !important;
   height: 262px;
   /* Center slide text vertically */
   display: -webkit-box;
@@ -13508,14 +13512,30 @@ header {
           filter: grayscale(100%);
 }
 
+.swiper-slide-prev, .swiper-slide-next {
+  width: 100% !important;
+}
+
+@media (min-width: 992px) {
+  .swiper-slide-prev, .swiper-slide-next {
+    width: 23% !important;
+  }
+}
+
 .swiper-slide-active {
-  width: 636px !important;
+  width: 100% !important;
   height: 439px !important;
 }
 
 .swiper-slide-active .artistPhoto {
   -webkit-filter: none;
           filter: none;
+}
+
+@media (min-width: 992px) {
+  .swiper-slide-active {
+    width: 50% !important;
+  }
 }
 
 .swiper-slide {
@@ -13749,6 +13769,7 @@ header {
   .rankingBlock2 .imgBlock {
     width: 20.9%;
     height: 90px;
+    border-right: 1px solid black;
   }
   .rankingBlock2 .card-body {
     width: 66.1%;
