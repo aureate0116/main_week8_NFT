@@ -13581,6 +13581,65 @@ header {
   background-color: #E6553B;
 }
 
+.artWorkPhoto {
+  position: relative;
+}
+
+.artWorkPhoto img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.artWorkPhoto .artWorkText, .artWorkPhoto .btn {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .artWorkPhoto:hover::after {
+    content: '';
+    background-color: #000;
+    opacity: 70%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .artWorkPhoto:hover .artWorkText {
+    position: absolute;
+    border: 1px solid #fff;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 222px;
+    display: block;
+  }
+  .artWorkPhoto:hover .artWorkText-2 {
+    height: 263px;
+  }
+  .artWorkPhoto:hover .artWorkText-3 {
+    height: 137px;
+  }
+  .artWorkPhoto:hover .artWorkText-4 {
+    height: 142px;
+  }
+  .artWorkPhoto:hover .artWorkText-5 {
+    height: 363px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .artWorkPhoto:hover .btn {
+    position: absolute;
+    z-index: 10;
+    right: 32px;
+    bottom: 32px;
+    display: block;
+  }
+}
+
 .textVertical {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
@@ -13787,70 +13846,6 @@ header {
   }
 }
 
-.artWork .card {
-  width: 100%;
-  height: 100%;
-}
-
-.artWorkPhoto {
-  position: relative;
-}
-
-.artWorkPhoto img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.artWorkPhoto .artWorkText, .artWorkPhoto .btn {
-  display: none;
-}
-
-@media (min-width: 992px) {
-  .artWorkPhoto:hover::after {
-    content: '';
-    background-color: #000;
-    opacity: 70%;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  .artWorkPhoto:hover .artWorkText {
-    position: absolute;
-    border: 1px solid #fff;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    height: 222px;
-    display: block;
-  }
-  .artWorkPhoto:hover .artWorkText-2 {
-    height: 263px;
-  }
-  .artWorkPhoto:hover .artWorkText-3 {
-    height: 137px;
-  }
-  .artWorkPhoto:hover .artWorkText-4 {
-    height: 142px;
-  }
-  .artWorkPhoto:hover .artWorkText-5 {
-    height: 363px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .artWorkPhoto:hover .btn {
-    position: absolute;
-    z-index: 10;
-    right: 32px;
-    bottom: 32px;
-    display: block;
-  }
-}
-
 .valueList {
   height: 90px;
 }
@@ -13867,7 +13862,7 @@ header {
   position: absolute;
   right: 0px;
   top: 0;
-  z-index: 10;
+  z-index: 9;
 }
 
 .valueList .valueItem .content::before {
@@ -13878,7 +13873,7 @@ header {
   position: absolute;
   left: 0px;
   bottom: 0;
-  z-index: 10;
+  z-index: 9;
 }
 
 /*# sourceMappingURL=all.css.map */
