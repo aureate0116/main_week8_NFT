@@ -16,7 +16,7 @@
   <nav class="navbar navbar-expand-lg navbar-light p-0">
     <div class="container-lg px-2 d-flex justify-content-between"> 
 
-      <h1><a class="navbar-brand" href="#"></a></h1>
+      <h1><a class="navbar-brand" href="index.html"></a></h1>
 
       <div class="d-flex  ">
         <!--search bar-->
@@ -24,15 +24,16 @@
           <input class="form-control me-3 fs-6 lh-base text-dark bg-light" type="search" placeholder="Search" aria-label="Search" value="搜尋作品名稱、藝術家名稱">
 
           <button class="btn p-0  d-flex align-items-center" type="submit">
-            <span class="material-icons text-black fs-5">search</span>
+            <i class="fa-solid fa-magnifying-glass text-black fs-5"></i>
+            <!-- <span class="material-icons text-black fs-5">search</span> -->
           </button>
         </div>
         
        
           <button class="navbar-toggler border-0 p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <!-- <span class="navbar-toggler-icon "></span> -->
-          <span class="material-icons text-black fs-5">menu</span>
-
+          <!-- <span class="material-icons text-black fs-5">menu</span> -->
+          <i class="fa-solid fa-bars text-black fs-5"></i>
           </button>
         
           <div class="collapse navbar-collapse " id="navbarContent">
@@ -45,9 +46,9 @@
               <li class="nav-item ">
                 <a class="nav-link px-xl-9 px-md-6 py-md-8 py-4 text-black fw-bold" href="#">市值</a>
               </li>
-              <li class="nav-item  border-0 mb-md-0 mb-4">
+              <li class="nav-item border-0 mb-md-0 mb-4">
                 <a class="nav-link px-xl-9 px-md-6 py-md-8 p-0 text-black " href="#">
-                  <span class="material-icons text-black">wallet </span>
+                  <i class="fa-solid fa-wallet text-black fs-6 mt-1"></i>
                   <span class="btn-wallet btn btn-primary w-100 py-2 link-white border">連結錢包</span>
                 </a>
               </li>
@@ -71,47 +72,10 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/vendors.js"></script>
 <script src="./assets/js/all.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        loop: true,
-       //slidesPerView: "auto",
-        spaceBetween: 24,
-        slidesPerView: 3,
-        coverflowEffect: {
-          rotate: 0,  // y軸旋轉角度
-          stretch: 0,  //每个slide之间的拉伸值，越大slide靠得越紧
-          depth: 0, //slide的位置深度。值越大z轴距离越远，看起来
-          modifier: 1, //depth和rotate和stretch的倍率
-          slideShadows: false, //是否开启slide阴影
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          992: {
-            centeredSlides: false,
-            slidesPerView: 1,
-          },
-          1200: {
-            centeredSlides: true,
-            slidesPerView: 3,
-            spaceBetween: 24,
-          }
-        }
-
-      });
-
-</script>
 
 </body>
 

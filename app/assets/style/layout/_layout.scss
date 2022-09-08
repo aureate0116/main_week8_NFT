@@ -53,7 +53,7 @@ header{
     .nav-item{
         font-size: 18px;
         line-height: 26px;
-        .material-icons{
+        .fa-wallet{
             display: none;
         }
 
@@ -65,7 +65,7 @@ header{
             .btn-wallet{
                 display: none;
             }
-            .material-icons{
+            .fa-wallet{
                 display: block;
             }
         }

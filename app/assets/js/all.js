@@ -7,7 +7,7 @@ $(function() {
     loop: true,
    //slidesPerView: "auto",
     spaceBetween: 24,
-    slidesPerView: 3,
+    slidesPerView: 1,
     coverflowEffect: {
       rotate: 0,  // y軸旋轉角度
       stretch: 0,  //每个slide之间的拉伸值，越大slide靠得越紧
@@ -20,11 +20,11 @@ $(function() {
       clickable: true,
     },
     breakpoints: {
-      992: {
+      768: {
         centeredSlides: false,
         slidesPerView: 1,
       },
-      1200: {
+      992: {
         centeredSlides: true,
         slidesPerView: 3,
         spaceBetween: 24,

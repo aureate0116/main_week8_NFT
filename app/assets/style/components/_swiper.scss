@@ -9,7 +9,7 @@
 
 .swiper-slide {
     //background: gray;
-    width: 306px !important;
+   // width: 306px !important;
     height: 262px ;
     .artistPhoto{
         display: block;
@@ -34,21 +34,21 @@
     align-items: center;
 }
 
-// .swiper-slide-prev, .swiper-slide-next {
-//     //width: 25% !important;
-//     // .artistPhoto {
-//     //     width: 306px !important;
-//     //     height: 262px;
-//     //     object-fit: cover;
-//     // }
-// }
+.swiper-slide-prev, .swiper-slide-next {
+    //width: 100% !important;  //div 預設撐滿一行, 所以不用寫
+    @include desktop{  //992px
+        width: 23% !important;
+    }
+}
 
 .swiper-slide-active{
-    //width: 50% !important;
-    width: 636px !important;
+    //width: 100% !important; //div 預設撐滿一行, 所以不用寫
     height: 439px !important;
     .artistPhoto{
         filter:none;
+    }
+    @include desktop{ //992px
+        width: 50% !important;
     }
 }
 

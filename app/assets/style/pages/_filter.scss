@@ -1,0 +1,30 @@
+.valueList {
+    height: 90px;
+    .valueItem{
+        width: 100%;
+        //background-color: green;
+        .content{
+            &::after{
+                content: '';
+                border-right: 1px solid black;
+                width: 100%;
+                height: 20px;
+                position: absolute;
+                right:0px;
+                top:0;
+                z-index: 9;
+            }
+            &::before{
+                content: '';
+                border-right: 1px solid black;
+                width: 100%;
+                height: 20px;
+                position: absolute;
+                left:0px;
+                bottom:0;
+                z-index: 9;
+            }
+        }
+        
+    }
+}

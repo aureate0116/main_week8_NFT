@@ -16,6 +16,12 @@
 //    }
 // }
 
+@mixin desktop-xl(){  
+   @media (min-width:1200px) {  
+        @content; 
+   }
+}
+
 // $grid-breakpoints: (
 //   xs: 0,
 //   sm: 576px,
