@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Paytone+One&family=Squada+One&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
@@ -2834,8 +2833,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-  background-color: #E6553B;
-  border-color: #E6553B;
+  background-color: #000;
+  border-color: #000;
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -5385,7 +5384,7 @@ fieldset:disabled .btn {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.5rem;
   font-size: 1rem;
   color: #212529;
   text-align: left;
@@ -5408,14 +5407,14 @@ fieldset:disabled .btn {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #cf4d35;
-  background-color: #fdeeeb;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 #000;
+          box-shadow: inset 0 0 0 #000;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23cf4d35'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -5464,7 +5463,7 @@ fieldset:disabled .btn {
 
 .accordion-item {
   background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 0 solid #000;
 }
 
 .accordion-item:not(:first-of-type) {
@@ -5472,7 +5471,7 @@ fieldset:disabled .btn {
 }
 
 .accordion-body {
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.5rem;
 }
 
 .accordion-flush .accordion-collapse {
@@ -13336,7 +13335,6 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
   vertical-align: middle;
 }
 
@@ -13419,7 +13417,7 @@ header {
   line-height: 26px;
 }
 
-.navbar-nav .nav-item .material-icons {
+.navbar-nav .nav-item .fa-wallet {
   display: none;
 }
 
@@ -13432,7 +13430,7 @@ header {
   .navbar-nav .nav-item .btn-wallet {
     display: none;
   }
-  .navbar-nav .nav-item .material-icons {
+  .navbar-nav .nav-item .fa-wallet {
     display: block;
   }
 }
@@ -13512,10 +13510,6 @@ header {
           filter: grayscale(100%);
 }
 
-.swiper-slide-prev, .swiper-slide-next {
-  width: 100% !important;
-}
-
 @media (min-width: 992px) {
   .swiper-slide-prev, .swiper-slide-next {
     width: 23% !important;
@@ -13523,7 +13517,6 @@ header {
 }
 
 .swiper-slide-active {
-  width: 100% !important;
   height: 439px !important;
 }
 
@@ -13800,19 +13793,21 @@ header {
 }
 
 .artWorkPhoto {
-  height: 254px;
   position: relative;
 }
 
 .artWorkPhoto img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+.artWorkPhoto .artWorkText, .artWorkPhoto .btn {
+  display: none;
+}
+
 @media (min-width: 992px) {
-  .artWorkPhoto::after {
+  .artWorkPhoto:hover::after {
     content: '';
     background-color: #000;
     opacity: 70%;
@@ -13823,21 +13818,67 @@ header {
     left: 0;
     z-index: 1;
   }
-  .artWorkPhoto .artWorkText {
+  .artWorkPhoto:hover .artWorkText {
     position: absolute;
     border: 1px solid #fff;
     z-index: 10;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 222px;
     display: block;
   }
-  .artWorkPhoto .btn {
+  .artWorkPhoto:hover .artWorkText-2 {
+    height: 263px;
+  }
+  .artWorkPhoto:hover .artWorkText-3 {
+    height: 137px;
+  }
+  .artWorkPhoto:hover .artWorkText-4 {
+    height: 142px;
+  }
+  .artWorkPhoto:hover .artWorkText-5 {
+    height: 363px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .artWorkPhoto:hover .btn {
     position: absolute;
     z-index: 10;
     right: 32px;
+    bottom: 32px;
     display: block;
   }
+}
+
+.valueList {
+  height: 90px;
+}
+
+.valueList .valueItem {
+  width: 100%;
+}
+
+.valueList .valueItem .content::after {
+  content: '';
+  border-right: 1px solid black;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  z-index: 10;
+}
+
+.valueList .valueItem .content::before {
+  content: '';
+  border-right: 1px solid black;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  z-index: 10;
 }
 
 /*# sourceMappingURL=all.css.map */

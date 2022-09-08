@@ -26,11 +26,11 @@ $(function () {
       clickable: true
     },
     breakpoints: {
-      992: {
+      768: {
         centeredSlides: false,
         slidesPerView: 1
       },
-      1200: {
+      992: {
         centeredSlides: true,
         slidesPerView: 3,
         spaceBetween: 24

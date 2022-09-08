@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ART NFT Filter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+
+<header class="container-fluid  px-0 py-md-0 py-3 position-relative">
+  <nav class="navbar navbar-expand-lg navbar-light p-0">
+    <div class="container-lg px-2 d-flex justify-content-between"> 
+
+      <h1><a class="navbar-brand" href="#"></a></h1>
+
+      <div class="d-flex  ">
+        <!--search bar-->
+        <div class="search py-md-8 px-md-9 d-flex me-md-0 me-4 align-items-center">
+          <input class="form-control me-3 fs-6 lh-base text-dark bg-light" type="search" placeholder="Search" aria-label="Search" value="搜尋作品名稱、藝術家名稱">
+
+          <button class="btn p-0  d-flex align-items-center" type="submit">
+            <i class="fa-solid fa-magnifying-glass text-black fs-5"></i>
+            <!-- <span class="material-icons text-black fs-5">search</span> -->
+          </button>
+        </div>
+        
+       
+          <button class="navbar-toggler border-0 p-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon "></span> -->
+          <!-- <span class="material-icons text-black fs-5">menu</span> -->
+          <i class="fa-solid fa-bars text-black fs-5"></i>
+          </button>
+        
+          <div class="collapse navbar-collapse " id="navbarContent">
+            <ul class="navbar-nav px-2 me-auto mb-2 mb-lg-0 text-center">
+                <!-- 隱藏li aria-current="page"  class="active"-->
+              <li class="nav-item borderBottom">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 py-4 text-black fw-bold"  href="#">探索</a>
+                
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 py-4 text-black fw-bold" href="#">市值</a>
+              </li>
+              <li class="nav-item border-0 mb-md-0 mb-4">
+                <a class="nav-link px-xl-9 px-md-6 py-md-8 p-0 text-black " href="#">
+                  <i class="fa-solid fa-wallet text-black fs-6 mt-1"></i>
+                  <span class="btn-wallet btn btn-primary w-100 py-2 link-white border">連結錢包</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        
+      </div>
+    </div>  <!---end nav - container-->
+  </nav>
+</header>
+
+
+    <main>
+<div class="container-lg px-0">
+    <div class="row mt-lg-8 mt-0">
+        <div class="col-lg-3">
+            <div class="sidebar border">
+                <!--Accordion-->
+                <div class="accordion pb-4" id="accordionExample">
+                    <div class="accordion-item ">
+                      <h2 class="accordion-header " id="headingOne">
+                        <button class="accordion-button fw-bold pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#internet" aria-expanded="true" aria-controls="internet">
+                          網路
+                        </button>
+                      </h2>
+                      <div id="internet" class="accordion-collapse collapse show border-bottom border-dark" aria-labelledby="headingOne">
+                        <div class="accordion-body">
+                            <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                <label class="form-check-label" for="internet1">
+                                    以太坊
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="internet1">
+                            </div>
+                            <div class="form-check d-flex justify-content-between p-0">
+                                <label class="form-check-label" for="internet2">
+                                    BNB 智能鏈
+                                </label>
+                                <input class="form-check-input" type="checkbox" checked value="" id="internet2">
+                            </div>
+                        </div>
+                      </div>
+                    </div><!--end accordion-item-->
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                          <button class="accordion-button fw-bold pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#status" aria-expanded="true" aria-controls="status">
+                            狀態
+                          </button>
+                        </h2>
+                        <div id="status" class="accordion-collapse collapse show border-bottom border-dark" aria-labelledby="headingOne">
+                          <div class="accordion-body">
+                              <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                  <label class="form-check-label" for="status1">
+                                    僅展示
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" value="" id="status1">
+                              </div>
+                              <div class="form-check d-flex justify-content-between p-0">
+                                  <label class="form-check-label" for="status2">
+                                    拍賣中
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" checked value="" id="status2">
+                              </div>
+                          </div>
+                        </div>
+                      </div><!--end accordion-item-->
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                          <button class="accordion-button fw-bold pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#price" aria-expanded="true" aria-controls="price">
+                            價格
+                          </button>
+                        </h2>
+                        <div id="price" class="accordion-collapse collapse show border-bottom border-dark" aria-labelledby="headingOne">
+                          <div class="accordion-body d-flex align-items-center">
+                            <select class="form-select me-1" aria-label="example" >
+                              <option selected>ETH</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                            <div class="input-group">
+                              <input type="text" class="form-control" aria-label="price input" aria-describedby="price input">
+                            </div>
+                            <span class="mx-1"> &ndash; </span>
+                            <div class="input-group">
+                              <input type="text" class="form-control" aria-label="price input" aria-describedby="price input">
+                            </div>
+
+                          </div>
+                        </div>
+                      </div><!--end accordion-item-->
+
+                      <div class="accordion-item ">
+                        
+                        <h2 class="accordion-header " id="headingOne">
+                         <h3 class="fs-6 text-dark m-4">屬性</h3>
+                          <button class="accordion-button fw-bold py-0" type="button" data-bs-toggle="collapse" data-bs-target="#variety" aria-expanded="true" aria-controls="variety">
+                            品種
+                          </button>
+                        </h2>
+                        <div id="variety" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                          <div class="accordion-body">
+                              <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                  <label class="form-check-label" for="variety1">
+                                    八哥
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" value="" id="variety1">
+                              </div>
+                              <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                  <label class="form-check-label" for="variety2">
+                                    虎皮鸚鵡
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" checked value="" id="variety2">
+                              </div>
+                              <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                <label class="form-check-label" for="variety3">
+                                    太平鳥
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="variety3">
+                            </div>
+                            <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                <label class="form-check-label" for="variety4">
+                                    畫眉鳥
+                                </label>
+                                <input class="form-check-input" type="checkbox" value="" id="variety4">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!--end accordion-item-->
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                          <button class="accordion-button fw-bold pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#birds" aria-expanded="true" aria-controls="birds">
+                            鳥的數量
+                          </button>
+                        </h2>
+                        <div id="birds" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                          <div class="accordion-body">
+                              <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                  <label class="form-check-label" for="birds1">
+                                    birds1
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" value="" id="birds2">
+                              </div>
+                              <div class="form-check d-flex justify-content-between p-0">
+                                  <label class="form-check-label" for="birds2">
+                                    birds2
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" checked value="" id="birds2">
+                              </div>
+                          </div>
+                        </div>
+                      </div><!--end accordion-item-->
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                          <button class="accordion-button fw-bold pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#flower" aria-expanded="true" aria-controls="flower">
+                            是否有花草
+                          </button>
+                        </h2>
+                        <div id="flower" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                          <div class="accordion-body">
+                              <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                  <label class="form-check-label" for="flower1">
+                                    flower1
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" value="" id="birds2">
+                              </div>
+                              <div class="form-check d-flex justify-content-between p-0">
+                                  <label class="form-check-label" for="flower2">
+                                    flower2
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" checked value="" id="flower2">
+                              </div>
+                          </div>
+                        </div>
+                      </div><!--end accordion-item-->
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header " id="headingOne">
+                          <button class="accordion-button fw-bold pb-0" type="button" data-bs-toggle="collapse" data-bs-target="#birdColor" aria-expanded="true" aria-controls="birdColor">
+                            鳥的顏色
+                          </button>
+                        </h2>
+                        <div id="birdColor" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                          <div class="accordion-body">
+                              <div class="form-check d-flex justify-content-between p-0 mb-1">
+                                  <label class="form-check-label" for="birdColor1">
+                                    birdColor1
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" value="" id="birdColor1">
+                              </div>
+                              <div class="form-check d-flex justify-content-between p-0">
+                                  <label class="form-check-label" for="birdColor2">
+                                    birdColor2
+                                  </label>
+                                  <input class="form-check-input" type="checkbox" checked value="" id="birdColor2">
+                              </div>
+                          </div>
+                        </div>
+                      </div><!--end accordion-item-->
+                </div><!--end accordion 1-->
+            </div><!--end sidebar-->
+        </div><!--end col-lg-3-->
+
+        <div class="col-lg-8">
+          <div class="row">
+            <div class="col-lg-7">
+              <div class="d-flex align-items-center mb-1">
+                <img class="rounded-circle me-3" width="32" height="32" src="./assets/images/artist01.jpg" alt="artist">
+                <p class="fontSquada lh-17 ">Michael</p>
+              </div>
+              <h2 class="fs-2 lh-32 mb-1 fw-bold">我家外面的鳥</h2>
+              <p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+            </div>
+
+            <div class="col-lg-5">
+              <ul class="valueList border list-unstyled d-flex text-center bg-white">
+                <li class="valueItem  position-relative">
+                  <div class="content py-3">
+                    <h3 class="fs-6 mb-1">項目2</h3>
+                    <p class="fontSquada fs-3 lh-32">6.4 k</p>
+                  </div>
+                </li>
+                <li class="valueItem  position-relative">
+                  <div class="content py-3">
+                    <h3 class="fs-6 mb-1">擁有者</h3>
+                    <p class="fontSquada fs-3 lh-32">2.5 k</p>
+                  </div>
+                </li>
+                <li class="valueItem  position-relative">
+                  <div class="content py-3">
+                    <h3 class="fs-6 mb-1">底價</h3>
+                    <p class="fontSquada fs-3 lh-32">
+                      <i class="fa-brands fa-ethereum"></i>
+                      1.38 k</p>
+                  </div>
+                </li>
+                <li class="valueItem  position-relative">
+                  <div class="py-3">
+                    <h3 class="fs-6 mb-1">總額</h3>
+                    <p class="fontSquada fs-3 lh-32">2.8 k</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div><!-- end row-->
+
+          <div class="row">
+
+          </div><!-- end row-->
+        </div><!--end col-lg-8-->
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+  <div class="mb-1 border-top border-1"></div>
+  <div class="py-4 border-top border-4">
+    <p class="text-center fs-6 lh-base">© ART NFT. All Rights Reserved</p>
+  </div>
+    
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/vendors.js"></script>
+<script src="./assets/js/all.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+</body>
+
+</html>
