@@ -32,5 +32,18 @@ $(function() {
     }
 
   });
-  
 });
+
+
+//search bar
+$(function(){
+  $(".flip").click(function(){
+      // $(".form-control").slideToggle("slow");
+      $(".form-control").toggle();
+      //$(".search").toggleClass("form-control");
+      // $(".xs2").toggle();
+  });
+
+});
+
+
