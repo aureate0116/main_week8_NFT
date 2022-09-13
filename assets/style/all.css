@@ -13321,13 +13321,6 @@ fieldset:disabled .btn {
 }
 
 /*放全站html標籤css設定*/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 body {
   background-color: #F0F0F0;
   font-family: 'Noto Sans TC';
@@ -13443,6 +13436,18 @@ header {
   .navbar-nav .nav-item.borderBottom {
     border-bottom: 0px;
   }
+}
+
+.navbar-nav .nav-item a.nav-link {
+  color: #000;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: #E6553B;
+}
+
+.navbar-nav .nav-item:hover a.nav-link {
+  color: #fff;
 }
 
 .btn-triangle {
@@ -13844,6 +13849,11 @@ header {
   .imgBlock:hover .btnHover2 {
     display: block;
   }
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .valueList {
