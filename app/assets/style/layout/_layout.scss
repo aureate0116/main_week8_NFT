@@ -39,6 +39,7 @@ header{
     left:0;
     top:37px;  // 50px;
     z-index: 10;
+    
    
     @include pad(){
         top:104px;
@@ -76,6 +77,18 @@ header{
             border-bottom: 1px solid #000;
             @include desktop(){   
                 border-bottom:0px;
+            }
+       }
+
+       a.nav-link{
+        color:#000;
+    }
+      
+       &:hover{
+       // color:$primary;
+            background-color: $primary;
+            a.nav-link{
+                color:#fff;
             }
        }
     }

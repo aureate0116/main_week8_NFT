@@ -13,16 +13,16 @@
 
 // 修改 bootstrap 自定義變數
 // @import "./helpers/variables_2";
-@import "./helpers/variables";
-@import "./helpers/utilities";
+@import "./utils/variables";
+@import "./utils/utilities";
 
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 // custom 順序: mixin > reset > base > layout > components(module) > pages (使用bootstrap 不用 reset)
-@import './helpers/mixin';
-@import './helpers/base';
-@import "./helpers/helpers";
+@import './utils/mixin';
+@import './base/base';
+@import "./base/fontStyle";
 
 
 @import './layout/layout';
